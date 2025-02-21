@@ -2,7 +2,7 @@ from telegram import Update, BotCommand
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # Substitua pelo seu token do BotFather
-TOKEN = '7639152399:AAFizQmnswLG2OvKoQOGooyxhxH_DkImtJ4'
+TOKEN = os.getenv('TOKEN')
 
 # Comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
